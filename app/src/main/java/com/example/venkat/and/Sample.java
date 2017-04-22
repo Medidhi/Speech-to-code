@@ -89,7 +89,7 @@ ListView listView=(ListView)findViewById(R.id.sample_list);
                     e.printStackTrace();
                 }
                 fl=fl+".txt";
-                Toast.makeText(Sample.this, fl, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Sample.this, fl, Toast.LENGTH_LONG).show();
 
                 Intent i =new Intent(Sample.this,Disp_code.class);
                 i.putExtra("file",fl);

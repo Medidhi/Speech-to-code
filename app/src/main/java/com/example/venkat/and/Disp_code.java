@@ -3,6 +3,7 @@ package com.example.venkat.and;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,6 +16,7 @@ public class Disp_code extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disp_code);
         String file = getIntent().getExtras().getString("file").toString();
+       // Toast.makeText(this,file, Toast.LENGTH_SHORT).show();
         //String file="INDEX.txt";
         if (file != "NOTHING.txt") {
             StringBuilder Sb;
@@ -38,6 +40,7 @@ public class Disp_code extends AppCompatActivity {
 
             } catch (IOException e) {
                 e.printStackTrace();
+                Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
             }
         }
         else {

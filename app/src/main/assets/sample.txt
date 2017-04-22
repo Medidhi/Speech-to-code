@@ -24,9 +24,38 @@ selection sort
 simple interest
 square root
 sum of digits
-table of number
-
-
-
-
-
+table of numberarmstrong number
+binary search
+binary to decimal
+bubble sort
+bucket sort
+calender
+dictionary sort
+divide_by_zero
+dynamic memory allocation
+exponent power series
+factorial
+fibonacci
+floyd's triangle
+GCD
+heap sort
+insertion sort
+inverse of a matrix
+knapsack problem
+LCM
+magic square
+matrix multiplication
+merge sort
+no of prime between a and b
+octal to decimal
+prims algorithms
+radix sort
+reverse a string
+Root of a factorial
+RSA agorithm
+sequential search
+singly linked list
+standard deviation
+tower of hanoi
+transpose of a matrix
+vowels_or_consonants
