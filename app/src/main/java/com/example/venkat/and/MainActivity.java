@@ -3,6 +3,7 @@ package com.example.venkat.and;
 import android.app.Dialog;
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -35,13 +36,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        NotificationCompat.Builder builder=new NotificationCompat.Builder(MainActivity.this);
-        builder.setContentTitle("welcome");
-        builder.setContentText("safcsaf");
-        //Intent i=new Intent(this,)
-        TaskStackBuilder stackBuilder=TaskStackBuilder.create(this);
-
+//
+//        NotificationCompat.Builder builder=new NotificationCompat.Builder(MainActivity.this);
+//        builder.setContentTitle("welcome");
+//        builder.setContentText("safcsaf");
+//        Intent i=new Intent(this,not.class);
+//        TaskStackBuilder stackBuilder=TaskStackBuilder.create(this);
+//        stackBuilder.addParentStack(not.class);
+//        stackBuilder.addNextIntent(i);
+//        PendingIntent pendingIntent=stackBuilder.getPendingIntent(001,PendingIntent.FLAG_UPDATE_CURRENT);
+//        builder.setContentIntent(pendingIntent);
+//        NotificationManager nm=(NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//        nm.notify(001,builder.build());
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
