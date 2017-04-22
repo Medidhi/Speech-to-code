@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	long long int no,a=0;
+	cout<<"Enter any num :";
+	cin>>no;
+	while(no>0)
+	{
+	no=no/10;
+	a++;
+	}
+	cout<<"\n No. of digits in given number is: "<<a;
+return 0;
+}

@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	float principle,rate,time,si;
+	cout<<"Enter Principle : ";
+	cin>>principle;
+	cout<<"Enter Rate : ";
+	cin>>rate;
+	cout<<"Enter Time : ";
+	cin>>time;
+	si=(principle*rate*time)/100;
+	cout<<"Simple interest is : "<<si;
+
+	
+	return 0;
+}

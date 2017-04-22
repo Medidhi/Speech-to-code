@@ -1,0 +1,54 @@
+arithmetic operations
+00000001
+ascii value
+00000002
+average
+00000003
+bubble sort
+00000004
+celsius toFahrenheit
+00000005
+check prime
+00000006
+compound interest
+00000007
+concatenate strings
+00000008
+cube root
+00000009
+factorial
+00000010
+fahrenheit to Celsius
+00000011
+fibonacci series
+00000012
+find max
+00000013
+frequence of character
+00000014
+hcf
+00000015
+insertion sort
+00000016
+lcm
+00000017
+number of digits
+00000018
+pallindrome number
+00000019
+pallindrome string
+00000020
+perimeter and Volume
+00000021
+reverse string
+00000022
+selection sort
+00000023
+simple interest
+00000024
+square root
+00000025
+sum of digits
+00000026
+table of number
+00000027

@@ -1,0 +1,32 @@
+arithmetic operations
+ascii value
+average
+bubble sort
+celsius toFahrenheit
+check prime
+compound interest
+concatenate strings
+cube root
+factorial
+fahrenheit to Celsius
+fibonacci series
+find max
+frequence of character
+hcf
+insertion sort
+lcm
+number of digits
+pallindrome number
+pallindrome string
+perimeter and Volume
+reverse string
+selection sort
+simple interest
+square root
+sum of digits
+table of number
+
+
+
+
+

@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, j, k, temp;
+    cout<<"Enter the number of elements \n";
+    cin>>n;
+    int a[n];
+    cout<<"\n Enter the elements: ";
+
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+
+    for(i=1;i<n;i++)
+    {
+        for(j=i;j>=1;j--)
+        {
+            if(a[j]<a[j-1])
+            {
+                temp=a[j];
+                a[j]=a[j-1];
+                a[j-1]=temp;
+            }
+            else
+                break;
+        }
+    }
+
+    cout<<"\n Sorted array\n";
+    
+    for(k=0;k<n;k++)
+    {
+	   cout<<a[k]<<endl;
+    }
+
+    return 0;
+}

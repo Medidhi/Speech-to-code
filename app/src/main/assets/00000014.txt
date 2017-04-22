@@ -1,0 +1,29 @@
+#include<iostream>
+
+ int main()
+ {
+   int i,count=0;
+   string ch;
+   char c;
+   cout<<"Enter Any String: ";
+   cin>>str;
+   cout<<"Enter any Character form string: ";
+   cin>>c;
+   for(i=0;ch[i]!='\0';i++)
+   {
+      if(ch[i]==c)
+      {
+         count++;
+      }
+   }
+   if(count==0)
+   {
+      cout<<"Given character not found";
+   }
+   else
+   {
+      cout<<"Repetition of "<<c<<" "<<count<<" times";
+   }
+
+   return 0;
+ }

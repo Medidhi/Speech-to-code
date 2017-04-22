@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    string str;
+    long long int flag=0,i, length;
+    
+    
+    cout<<"Enter a string: "; 
+    cin>>str;
+    
+    length = str.length();
+    
+    for(i=0;i<length;i++)
+    {
+        if(str[i] != str[length-i-1])
+        {
+            flag = 1;
+            break;
+	   }
+	}
+    
+    if (flag) {
+        cout << string1 << " is not a palindrome" << endl; 
+    }    
+    else {
+        cout << string1 << " is a palindrome" << endl; 
+    }
+    return 0;
+}

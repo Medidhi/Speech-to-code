@@ -1,0 +1,11 @@
+#include<iostream>
+
+int main()
+{
+   int number, result;
+   cout<<"Enter any Character/Symbol/Digits: ";
+   cin>>number;
+   result = toascii(number);
+   cout<<"Ascii value: "<<result;
+   return 0;
+}

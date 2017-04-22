@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,n;
+
+    cout<<"Enter total number of elements: ";
+    cin>>n;
+    float arr[n];
+    cout<<"\n";
+
+    for(i=0;i<n;i++)
+    {
+      cout<<"Enter Number " << i + 1 << " : ";
+      cin >> arr[i];
+    }
+
+    max=arr[0];
+    
+    for(i = 1;i<n;i++)
+    {
+       if(max < arr[i])
+          max=arr[i];
+    }
+    cout<<"Largest element= "<<arr[0];
+
+    return 0;
+}

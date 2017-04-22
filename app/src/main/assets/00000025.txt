@@ -1,0 +1,13 @@
+#include<iostream>
+#include<cmath>
+
+int main() 
+{ 
+float num,ans;  
+cout<<"Enter any Num: "; 
+cin>>num; 
+ans=pow(num,0.5);
+cout<<"\n Squre of "<<num<<" is: "<<ans; 
+
+return 0;
+} 

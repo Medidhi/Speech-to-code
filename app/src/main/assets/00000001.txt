@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int input;
+	int num1, num2, sum, difference, product, quotient = 0;
+
+	cout<<"Enter Number 1: ";
+	cin >> num1;
+	cout<<"Enter Number 2: ";
+	cin >> num2;
+
+	cout<<"Choose arithmetic process\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n";
+	cin >> input;
+	if(input==1)
+	{
+		sum = num1 + num2;
+		cout << "The sum is " << sum << endl;
+	}
+	else if(input==2)
+	{
+		difference = num1 - num2;
+		cout << " The difference is " << difference << endl;
+	}
+	else if(input==3)
+	{
+		product = num1 * num2;
+		cout << " The product is " <<product << endl;
+	}
+	else if(input==4)
+	{
+		quotient = num1 / num2;
+		cout << "The quotient is " << quotient << endl;
+	}
+	else
+		cout<<"Wrong choice";
+		
+return 0;
+}
