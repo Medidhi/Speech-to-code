@@ -33,30 +33,9 @@
         </LinearLayout>
     </ScrollView>
 
-    <TextView
-        android:text="Gnerate code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/record_id"
-        android:layout_alignEnd="@+id/getcode"
-        android:id="@+id/textView8" />
 
-    <TextView
-        android:text="Ask the question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView7"
-        android:layout_below="@+id/record_id"
-        android:layout_alignStart="@+id/record_id" />
 
-    <TextView
-        android:text="History"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageButton3"
-        android:id="@+id/textView9"
-        android:layout_alignEnd="@+id/imageButton3" />
+
 
     <ImageButton
         android:layout_marginLeft="180dp"
@@ -65,9 +44,10 @@
         android:src="@drawable/voi"
         android:onClick="record_button"
         android:id="@+id/record_id"
-        android:layout_marginStart="20dp"
-        android:layout_above="@+id/imageButton3"
-        android:layout_alignParentStart="true" />
+        android:layout_marginStart="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp" />
 
     <ImageButton
         android:layout_marginLeft="180dp"
@@ -76,18 +56,28 @@
         app:srcCompat="@drawable/code"
         android:onClick="disp"
         android:id="@+id/getcode"
-        android:layout_marginEnd="28dp"
-        android:layout_above="@+id/textView8"
+        android:layout_marginEnd="40dp"
+        android:layout_alignBottom="@+id/record_id"
         android:layout_alignParentEnd="true" />
 
-    <ImageButton
+    <TextView
+        android:text="Generate code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/history"
-        android:id="@+id/imageButton3"
-        android:onClick="his"
-        android:layout_above="@+id/textView9"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/textView8"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignStart="@+id/getcode" />
+
+    <TextView
+        android:text="Talk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/getcode"
+        android:layout_alignStart="@+id/record_id"
+        android:layout_marginStart="17dp" />
 
 
 </RelativeLayout>
