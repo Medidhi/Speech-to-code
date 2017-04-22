@@ -1,12 +1,17 @@
 package com.example.venkat.and;
 
 import android.app.Dialog;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.TaskStackBuilder;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,11 +23,11 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
+import android.widget.RemoteViews;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
-
 
 
     @Override
@@ -31,19 +36,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
 
-
-
-
-//        Intent shortcutintent = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");
-//        shortcutintent.putExtra("duplicate", false);
-//        shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_NAME, getString(R.string.shortcutname));
-//        Parcelable icon = Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.drawable.codeicon);
-//        shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, icon);
-//        shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, new Intent(getApplicationContext(), EnterActivity.class));
-//        sendBroadcast(shortcutintent);
-
-
-
+        NotificationCompat.Builder builder=new NotificationCompat.Builder(MainActivity.this);
+        builder.setContentTitle("welcome");
+        builder.setContentText("safcsaf");
+        //Intent i=new Intent(this,)
+        TaskStackBuilder stackBuilder=TaskStackBuilder.create(this);
 
 
 
@@ -125,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if(item.getItemId()==R.id.help)
         {
-            String number = "9444245798";
+            String number = "1234567890";
             Intent intent = new Intent(Intent.ACTION_CALL);
             intent.setData(Uri.parse("tel:" +number));
             try {
