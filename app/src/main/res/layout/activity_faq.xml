@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_faq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.venkat.and.Faq">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="1) What is talk+?"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18" />
+
+            <TextView
+                android:text=" \nTalk+ is an app that helps you find a programmable-code using voice commands. The app records the voice input, searches the available codes and displays it in a new screen.
+"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView19" />
+
+            <TextView
+                android:text="2) How does talk+ work?"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView20" />
+
+            <TextView
+                android:text="\nClick on the generate icon and when the app prompts a speak now screen,provide input(program name) by voice command and wait for a few seconds. The app will display the recorded input in words and display the program code in a new screen.
+"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21" />
+
+            <TextView
+                android:text="3) How do I find the available codes?"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView22" />
+
+            <TextView
+                android:text="\nFor the user convinience, we also have a sample codes section where the user will be able to view the set of available codes in text format.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView23" />
+            <TextView
+                android:text="4) Can I export the codes outside talk+?"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView24" />
+            <TextView
+                android:text="\nThere is a share option that allows the user to export the selected codes outside talk+ to other apps that the user
+has in her phone.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView25" />
+            <TextView
+                android:text="5) Is the code compatible with all OS?\n"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView26" />
+            <TextView
+                android:text=" The age old turbo C which most students and teachers are familiar with does not help the use of codes in other OS, On the other hand talk+ codes are generic to all OS and is compatible with almost all IDEs available in the present day.
+\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView27" />
+            <TextView
+                android:text="6) Is there an option to rate talk+?\n"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView28" />
+            <TextView
+                android:text="Yes, we do have an option called feedback where you can rate us and also give us your valuable feedback in the comment box below.
+\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView29" />
+            <TextView
+                android:text="7) How can I contact the developers?\n"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView30" />
+            <TextView
+                android:text="There is a help and support section which allows you to get in touch with the developers if there is any issues faced by the customers in regard to the talk+."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView31" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

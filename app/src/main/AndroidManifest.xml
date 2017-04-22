@@ -25,7 +25,8 @@
         <activity android:name=".Help" />
         <activity android:name=".Abt" />
         <activity android:name=".not" />
-        <activity android:name=".Info"></activity>
+        <activity android:name=".Info" />
+        <activity android:name=".Faq"></activity>
     </application>
 
 </manifest>
