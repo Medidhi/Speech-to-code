@@ -17,7 +17,7 @@ public class Abt extends AppCompatActivity {
 
     public void open_git(View view)
     {
-        Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+        Uri uri = Uri.parse("https://github.com/Medidhi/Speech-to-code");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
