@@ -104,6 +104,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     int t=10;
                     Toast.makeText(MainActivity.this, ""+star, Toast.LENGTH_SHORT).show();
                     dialog.cancel();
+
+
+                    Toast.makeText(MainActivity.this, "Thank you", Toast.LENGTH_SHORT).show();
                 }
             });
 
@@ -116,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
             sharingIntent.setType("text/plain");
-            String shareBody = "The link is still under work";
+            String shareBody = "https://drive.google.com/open?id=0B9gW072mnYQzbk9nWVNXZnhqaFU";
             sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
             sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
             startActivity(Intent.createChooser(sharingIntent, "Share via"));

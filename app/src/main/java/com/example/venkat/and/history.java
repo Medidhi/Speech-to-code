@@ -3,6 +3,7 @@ package com.example.venkat.and;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -28,7 +30,7 @@ public class history extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
-
+        Toast.makeText(this, "open", Toast.LENGTH_SHORT).show();
         BufferedReader reader = null;
         ArrayList<String> s =new ArrayList<String>();
      //   String s[]={};
@@ -36,42 +38,76 @@ public class history extends AppCompatActivity {
         final ListView listView=(ListView)findViewById(R.id.lst);
 
         int t=0;
+
+
+
+
+
+
+        BufferedReader input = null;
+        File file = null;
         try {
-            reader = new BufferedReader(
-                    new InputStreamReader(getAssets().open("history.txt")));
+            file = new File(getCacheDir(), "MyCache"); // Pass getFilesDir() and "MyFile" to read file
+
+            input = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+            String line;
+            StringBuffer buffer = new StringBuffer();
+            while ((line = input.readLine()) != null) {
+
+                text.append(line);
+                text.append('\n');            }
 
 
-            // do reading, usually loop until end of file reading
-            String mLine;
-            while ((mLine = reader.readLine()) != null) {
-                t=1;
-       //         s[i]=mLine;
-                s.add(mLine);
-
-                text.append(mLine);
-                text.append('\n');
-            }
         } catch (IOException e) {
-            Toast.makeText(getApplicationContext(), "Error reading file!", Toast.LENGTH_LONG).show();
             e.printStackTrace();
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-
-                }
-            }
-
-//            TextView output = (TextView) findViewById(R.id.tu1);
-//            output.setText((CharSequence) text);
-            if(t!=0)
-            {
-
-                listView.setAdapter(listAdapter);
-            }
-
+        }finally {
+            listView.setAdapter(listAdapter);
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//        try {
+//            reader = new BufferedReader(
+//                    new InputStreamReader(getAssets().open("history.txt")));
+//
+//
+//            String mLine;
+//            while ((mLine = reader.readLine()) != null) {
+//                t=1;
+//                s.add(mLine);
+//
+//                text.append(mLine);
+//                text.append('\n');
+//            }
+//        } catch (IOException e) {
+//            Toast.makeText(getApplicationContext(), "Error reading file!", Toast.LENGTH_LONG).show();
+//            e.printStackTrace();
+//        } finally {
+//            if (reader != null) {
+//                try {
+//                    reader.close();
+//                } catch (IOException e) {
+//
+//                }
+//            }
+//            if(t!=0)
+//            {
+//
+//                listView.setAdapter(listAdapter);
+//            }
+//
+//        }
 
 
 

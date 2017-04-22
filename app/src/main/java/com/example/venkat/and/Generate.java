@@ -1,6 +1,7 @@
 package com.example.venkat.and;
 
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -99,19 +101,40 @@ public class Generate extends AppCompatActivity {
         sb.append(s);
         String fl="history.txt";
         textView.setText("Waiting for the question");
+        String FILE_NAME = "history.txt";
         try {
-            OutputStreamWriter out = new OutputStreamWriter(openFileOutput(fl,0));
-            out.write(s);
-            out.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+            FileOutputStream fos = openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
+            fos.write(s.toString().getBytes());
+            fos.close();
+            Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
             e.printStackTrace();
         }
         BufferedReader bufferedReader ;
+
+
+
+        String content = "hello world";
+        File file1;
+        FileOutputStream outputStream;
+        try {
+            // file = File.createTempFile("MyCache", null, getCacheDir());
+            file1 = new File(getCacheDir(), "MyCache");
+
+            outputStream = new FileOutputStream(file1);
+            outputStream.write(content.getBytes());
+            outputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+
+
         String file=null;
         s=s.toLowerCase();
-        Toast.makeText(this, "in this fn", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "in this fn", Toast.LENGTH_SHORT).show();
         try {
             bufferedReader =new BufferedReader(new InputStreamReader(getAssets().open("INDEX.txt")));
             String st;
@@ -121,7 +144,7 @@ public class Generate extends AppCompatActivity {
                 if(s.equals(st)==true)
                 {
                     file=bufferedReader.readLine();
-                    Toast.makeText(this, file, Toast.LENGTH_SHORT).show();
+                  //  Toast.makeText(this, file, Toast.LENGTH_SHORT).show();
                     bufferedReader.close();
                     break;
                 }
