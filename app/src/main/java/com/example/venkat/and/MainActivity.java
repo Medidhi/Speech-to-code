@@ -113,6 +113,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         }
 
+        if(item.getItemId()==R.id.legal)
+        {
+            Intent i=new Intent(this,Info.class);
+            startActivity(i);
+        }
+
 
         if(item.getItemId()==R.id.share)
         {

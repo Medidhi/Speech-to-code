@@ -12,7 +12,7 @@
         android:title="FAQ"
         android:icon="@drawable/help"/>
     <item android:id="@+id/legal"
-        android:title="Legal Information"
+        android:title="Information"
         android:icon="@drawable/info"/>
     <item android:id="@+id/help"
         android:title="Help and Support"
