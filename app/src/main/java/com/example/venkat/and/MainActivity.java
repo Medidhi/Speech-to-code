@@ -68,11 +68,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Intent i= new Intent(this,Sample.class);
         startActivity(i);
     }
-    public void feed(View view)
-    {
-      /*  Intent i=new Intent(this,Feedback.class);
-        startActivity(i);
-    */}
+
     public void abt(View view)
     {
         Intent i=new Intent(this,Abt.class);

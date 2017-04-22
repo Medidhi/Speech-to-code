@@ -21,7 +21,6 @@
         <activity android:name=".Sample" />
         <activity android:name=".history" />
         <activity android:name=".Disp_code" />
-        <activity android:name=".Feedback" />
         <activity android:name=".Share" />
         <activity android:name=".Help" />
         <activity android:name=".Abt"></activity>
