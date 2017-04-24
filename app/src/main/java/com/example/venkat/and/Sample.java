@@ -68,7 +68,7 @@ ListView listView=(ListView)findViewById(R.id.sample_list);
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String fl=null;
                 String S=parent.getItemAtPosition(position).toString();
-                Toast.makeText(Sample.this, S, Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(Sample.this, S, Toast.LENGTH_SHORT).show();
 
 
                 try {
@@ -89,7 +89,7 @@ ListView listView=(ListView)findViewById(R.id.sample_list);
                     e.printStackTrace();
                 }
                 fl=fl+".txt";
-                Toast.makeText(Sample.this, fl, Toast.LENGTH_LONG).show();
+              //  Toast.makeText(Sample.this, fl, Toast.LENGTH_LONG).show();
 
                 Intent i =new Intent(Sample.this,Disp_code.class);
                 i.putExtra("file",fl);
