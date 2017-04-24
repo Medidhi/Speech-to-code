@@ -83,42 +83,42 @@ GCD
 heap sort
 00000042
 insertion sort
-00000043
-inverse of a matrix
 00000044
-knapsack problem
+inverse of a matrix
 00000045
-LCM
+knapsack problem
 00000046
-magic square
+LCM
 00000047
-matrix multiplication
+magic square
 00000048
-merge sort
+matrix multiplication
 00000049
-no of prime between a and b
+merge sort
 00000050
-octal to decimal
+no of prime between a and b
 00000051
-prims algorithms
+octal to decimal
 00000052
-radix sort
+prims algorithms
 00000053
-reverse a string
+radix sort
 00000054
-Root of a factorial
+reverse a string
 00000055
-RSA agorithm
+Root of a factorial
 00000056
-sequential search
+RSA agorithm
 00000057
-singly linked list
+sequential search
 00000058
-standard deviation
+singly linked list
 00000059
-tower of hanoi
+standard deviation
 00000060
-transpose of a matrix
+tower of hanoi
 00000061
+transpose of a matrix
+0000062
 vowels_or_consonants
-00000062
+0000063
