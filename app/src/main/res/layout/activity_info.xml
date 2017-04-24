@@ -20,7 +20,14 @@
             android:orientation="vertical" >
 
         <TextView
-            android:text="dxcbdfg dfgds g"
+            android:text="Talk+ is an app that helps you find a programmable-code using voice commands. The app records the voice input, searches the available codes and displays it in a new screen.
+Click on the generate icon and when the app prompts a speak now screen,provide input(program name) by voice command and wait for a few seconds. The app will display the recorded input in words and display the program code in a new screen.
+For the user convinience, we also have a sample codes section where the user will be able to view the set of available codes in text format.
+There is a share option that allows the user to export the selected codes outside talk+ to other apps that the user
+has in her phone.
+The age old turbo C which most students and teachers are familiar with does not help the use of codes in other OS, On the other hand talk+ codes are generic to all OS and is compatible with almost all IDEs available in the present day.
+Yes, we do have an option called feedback where you can rate us and also give us your valuable feedback in the comment box below.
+There is a help and support section which allows you to get in touch with the developers if there is any issues faced by the customers in regard to the talk+."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView9" />
