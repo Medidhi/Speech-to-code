@@ -1,9 +1,8 @@
 # Talk+
-
 A tool that converts speech to text via google api. 
 
 ## Motivation
-The main target of this project is to help people who are handicaped to write a code. This gies equal opertunity for people who are handicapped to write a code.
+The main objective of this project is to help people who are handicaped to write a code. This gives equal opertunity for people who are handicapped to write a code.
 
 
 ## Screenshots 
