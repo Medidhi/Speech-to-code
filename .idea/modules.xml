@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/And.iml" filepath="$PROJECT_DIR$/And.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Speech-to-code.iml" filepath="$PROJECT_DIR$/.idea/modules/Speech-to-code.iml" group="Speech-to-code" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Speech-to-code-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Speech-to-code-app.iml" group="Speech-to-code/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

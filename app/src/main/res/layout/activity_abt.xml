@@ -61,16 +61,7 @@
         android:layout_alignStart="@+id/textView15"
         android:layout_marginBottom="52dp"
         android:id="@+id/textView14" />
-
-    <TextView
-        android:text="Vignesh T"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView14"
-        android:layout_marginBottom="24dp"
-        android:id="@+id/textView16" />
-
+    
     <TextView
         android:text="Developer"
         android:textSize="15dp"
